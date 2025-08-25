@@ -1,2 +1,181 @@
-<p>Hello World</p>
-s
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio: projects, experience, and contact." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ================= Header ================= -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span>Sebastian Cacchione</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= Hero ================= -->
+  <main id="home" class="container">
+    <section class="hero" aria-labelledby="intro-title">
+      <div>
+        <div class="hero__kicker">Front‑End Developer • UX‑friendly • Responsive</div>
+        <h1 id="intro-title" class="hero__title">Hi, I’m <span style="background:linear-gradient(135deg,var(--brand),var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent;">Sebastian</span>. I build anything.</h1>
+        <p class="hero__subtitle">Short intro goes here. Mention your stack (HTML, CSS, JavaScript) and what types of projects you enjoy (landing pages, dashboards, e‑commerce, etc.).</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="resume.pdf" aria-label="Download résumé">Résumé ↘</a>
+        </div>
+      </div>
+      <div class="hero__photo" aria-hidden="true">
+        <!-- Replace with your image <img src="me.jpg" alt="Portrait of Your Name"> -->
+        <span>Place your photo here</span>
+      </div>
+    </section>
+
+    <!-- ================= Projects ================= -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section__head">
+        <div class="eyebrow">Work</div>
+        <h2 id="projects-title" class="section__title">Selected Projects</h2>
+        <p class="section__desc">A few things I’ve designed and built recently. Each card can link to a live demo and repo.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Project Card -->
+        <article class="project">
+          <a class="project__thumb" href="#" aria-label="Open Project One"></a>
+          <div class="project__body">
+            <h3 class="project__title">Project One</h3>
+            <div class="project__meta">Landing page • 2025</div>
+            <p class="project__meta">Short description of what it does and your role.</p>
+            <div class="project__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="project__thumb" href="#" aria-label="Open Project Two"></a>
+          <div class="project__body">
+            <h3 class="project__title">Project Two</h3>
+            <div class="project__meta">Portfolio • 2025</div>
+            <p class="project__meta">What problem it solves and your impact.</p>
+            <div class="project__tags">
+              <span class="tag">UI</span>
+              <span class="tag">Grid</span>
+              <span class="tag">Animation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="project__thumb" href="#" aria-label="Open Project Three"></a>
+          <div class="project__body">
+            <h3 class="project__title">Project Three</h3>
+            <div class="project__meta">Dashboard • 2024</div>
+            <p class="project__meta">Key features and tech used.</p>
+            <div class="project__tags">
+              <span class="tag">Accessibility</span>
+              <span class="tag">Flexbox</span>
+              <span class="tag">Performance</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="section__head">
+        <div class="eyebrow">About</div>
+        <h2 id="about-title" class="section__title">A bit about me</h2>
+        <p class="section__desc">Swap this text with a concise bio. Focus on what you enjoy building, your values, and what you’re looking for.</p>
+      </div>
+
+      <div class="about">
+        <div class="about__card">
+          <h3>Skills</h3>
+          <ul>
+            <li>Semantic HTML & modern CSS (Flexbox, Grid)</li>
+            <li>Responsive design & accessibility (WCAG)</li>
+            <li>Basic JS for interactions (optional)</li>
+          </ul>
+        </div>
+        <div class="about__card">
+          <h3>Tooling</h3>
+          <ul>
+            <li>Figma for design handoff</li>
+            <li>Git & GitHub for version control</li>
+            <li>Performance-minded workflow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Experience ================= -->
+    <section id="experience" aria-labelledby="exp-title">
+      <div class="section__head">
+        <div class="eyebrow">Experience</div>
+        <h2 id="exp-title" class="section__title">Where I’ve worked</h2>
+        <p class="section__desc">List roles, what you shipped, and measurable outcomes.</p>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="item__role">Front‑End Developer <span class="item__where">— Company A</span></div>
+          <div class="item__when item__where">2024 – 2025</div>
+          <p>Highlights: redesigned landing page (+28% CVR), improved CLS from 0.22 → 0.03, set up component library.</p>
+        </div>
+        <div class="item">
+          <div class="item__role">Web Designer <span class="item__where">— Studio B</span></div>
+          <div class="item__when item__where">2023 – 2024</div>
+          <p>Highlights: shipped 12 marketing pages, led accessibility audit, boosted Lighthouse scores ≥95.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="section__head">
+        <div class="eyebrow">Contact</div>
+        <h2 id="contact-title" class="section__title">Let’s work together</h2>
+        <p class="section__desc">Drop a message via email or socials. Replace the placeholders below with your real links.</p>
+      </div>
+      <div class="contact__cards">
+        <a class="contact__card" href="mailto:you@example.com">
+          <h3>Email</h3>
+          <p>you@example.com</p>
+        </a>
+        <a class="contact__card" href="#" target="_blank" rel="noreferrer noopener">
+          <h3>GitHub</h3>
+          <p>@yourhandle</p>
+        </a>
+        <a class="contact__card" href="#" target="_blank" rel="noreferrer noopener">
+          <h3>LinkedIn</h3>
+          <p>/in/your-handle</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer>
+    <div class="container">© <span id="year"></span> Your Name. All rights reserved.</div>
+  </footer>
+
+  <!-- No JS required; the line below only sets the year. Remove if you want pure HTML/CSS. -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

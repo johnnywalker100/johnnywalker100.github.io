@@ -9,7 +9,10 @@
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="../../index.html"><span class="brand__logo" aria-hidden="true"></span><span>Sebastian Cacchione</span></a>
+      <a class="brand" href="../../index.html">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span>Sebastian Cacchione</span>
+      </a>
       <nav class="nav__links" aria-label="Primary">
         <a class="nav__link" href="../../index.html">Home</a>
         <a class="nav__link" href="../senior-design-project/index.html">Senior Design</a>
@@ -19,49 +22,67 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section>
       <div class="section__head">
         <div class="eyebrow">Senior Design Project</div>
         <h1 class="section__title">Senior Design Project</h1>
-        <p class="section__desc">Navigate the four core deliverables for the capstone project below.</p>
-        
+        <p class="section__desc">
+          Navigate the four core deliverables for the capstone project below.
+        </p>
       </div>
-      
+
       <div class="grid">
         <a class="project" href="problem-statement.html">
           <div class="project__thumb"></div>
-          <div class="project__body"><h3 class="project__title">Problem Statement</h3></div>
+          <div class="project__body">
+            <h3 class="project__title">Problem Statement</h3>
+          </div>
         </a>
+
         <a class="project" href="pdr.html">
           <div class="project__thumb"></div>
-          <div class="project__body"><h3 class="project__title">Preliminary Design Review</h3></div>
+          <div class="project__body">
+            <h3 class="project__title">Preliminary Design Review</h3>
+          </div>
         </a>
+
         <a class="project" href="cdr.html">
           <div class="project__thumb"></div>
-          <div class="project__body"><h3 class="project__title">Critical Design Review</h3></div>
+          <div class="project__body">
+            <h3 class="project__title">Critical Design Review</h3>
+          </div>
         </a>
+
         <a class="project" href="final-presentation.html">
           <div class="project__thumb"></div>
-          <div class="project__body"><h3 class="project__title">Final Presentation</h3></div>
+          <div class="project__body">
+            <h3 class="project__title">Final Presentation</h3>
+          </div>
+        </a>
+
+        <a class="project" 
+           href="https://docs.google.com/document/d/122aB_YZWNBfX74kDZ9Z-_iTcQFSinX17TFSvO_PDCgA/edit?usp=sharing" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          <div class="project__thumb"></div>
+          <div class="project__body">
+            <h3 class="project__title">Project Tracker</h3>
+          </div>
         </a>
       </div>
-    
     </section>
   </main>
+
   <footer>
-    <div class="container">© <span id="year"></span> Sebastian Cacchione. All rights reserved.</div>
+    <div class="container">
+      © <span id="year"></span> Sebastian Cacchione. All rights reserved.
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <section id="project-tracker">
-  <h2>Project Tracker</h2>
-  <p>Follow our progress and updates through our shared document:</p>
-  <a 
-    href="https://docs.google.com/document/d/122aB_YZWNBfX74kDZ9Z-_iTcQFSinX17TFSvO_PDCgA/edit?usp=sharing" 
-    target="_blank" 
-    rel="noopener noreferrer">
-    View Project Tracker
-  </a>
-</section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -1,5 +1,3 @@
 # Professional Contacts
-| Name | Title/Role | Organization | Contact | Why they can help |
-|------|------------|--------------|---------|-------------------|
-|      |            |              |         |                   |
-|      |            |              |         |                   |
+Mike Hannau (305-965-6530)
+Gabriel Ramomos (305-219-1935)

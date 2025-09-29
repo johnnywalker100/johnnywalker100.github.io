@@ -1,9 +1,73 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PDR</title><link rel="stylesheet" href="../../styles.css"></head><body>
-<main class="container">
-  <h1>Preliminary Design Review (PDR)</h1>
-  <h2>Problem Statement</h2>
-  <p>Write a clear, concise statement of the problem.</p>
-  <h2>Justification (200–300 words)</h2>
-  <p>Combine evidence from your research to justify the project. Cite at least 3 credible sources and mention 1–2 professionals.</p>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PDR – Problem & Justification</title>
+  <style>
+    :root{--max:860px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.55;margin:0;color:#111}
+    header,main,footer{max-width:var(--max);margin:auto;padding:20px}
+    header{padding-top:28px}
+    h1{font-size:clamp(1.6rem,2.8vw,2rem);margin:.2rem 0 .6rem}
+    h2{margin-top:1.6rem}
+    .meta{color:#666;font-size:.95rem}
+    .card{background:#fafafa;border:1px solid #eee;border-radius:12px;padding:18px}
+    a{color:#0a58ca;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .refs li{margin:.35rem 0}
+    .note{font-size:.92rem;color:#444}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Preliminary Design Review (PDR)</h1>
+    <p class="meta">Project Tracking • Problem Statement • Justification Synthesis</p>
+  </header>
+
+  <main>
+    <!-- 1) PROBLEM STATEMENT -->
+    <section id="problem-statement" class="card">
+      <h2>Problem Statement</h2>
+      <p>
+        When a boat operator is ejected and the engine does not shut off, the vessel can run uncontrolled and strike people in the water or the operator on re-encounter. Despite the availability of engine cut-off switch (ECOS) lanyards and wireless kill-switches, many operators don’t use them. The result is recurring, preventable fatalities and severe injuries from propeller strikes and hull impacts. This project aims to close the gap between existing safety tech and real-world use by exploring solutions that increase ECOS adoption and reliability in overboard scenarios.
+      </p>
+    </section>
+
+    <!-- 2) JUSTIFICATION SYNTHESIS -->
+    <section id="justification" class="card">
+      <h2>Justification Synthesis</h2>
+      <p>
+        Fatal boating accidents caused by captains falling overboard and failing to use engine cut-off devices remain a serious and preventable problem. In June 2025, two men were thrown from a boat in New Jersey’s Barnegat Bay after hitting a wake; the unmanned vessel circled back and fatally struck an elderly man 
+        (<a href="https://www.cbsnews.com/philadelphia/news/boat-accident-barnegat-bay-little-egg-harbor/">CBS News</a>).
+        Two months earlier, a 71-year-old man was killed by a propeller after being ejected from his boat in a similar incident 
+        (<a href="https://www.fox8live.com/2025/06/10/lake-charles-man-killed-by-boat-propeller-calcasieu-river/">Fox8</a>).
+        Law enforcement has publicly noted that a simple tool—the engine cut-off switch lanyard—can prevent runaway-boat scenarios; Sarasota police said a local runaway boat could have been avoided if the captain had worn the lanyard 
+        (<a href="https://www.wfla.com/news/sarasota-county/police-say-1-tool-could-have-prevented-runaway-boat-in-sarasota-bay/">WFLA</a>).
+      </p>
+      <p>
+        These cases show a clear pattern: when operators are ejected and the ECOS isn’t engaged, boats become uncontrolled hazards. The stakes are high—lives are lost even though mitigation is straightforward. Beyond enforcement and education, the field needs designs that make ECOS use automatic, intuitive, or impossible to forget (e.g., wireless tethers with positive confirmation, ignition interlocks tied to wearables, or post-ejection geofencing logic). For validation and feedback on practicality and adoption, professionals such as <strong>Capt. Chris Day</strong> (U.S. Coast Guard) and leaders at the <strong>National Safe Boating Council</strong> can provide expert review of safety requirements, human-factors constraints, and outreach pathways.
+      </p>
+      <p class="note"><em>Word count: ~230</em></p>
+    </section>
+
+    <!-- REFERENCES (for instructors/reviewers) -->
+    <section class="card">
+      <h2>References (Selected)</h2>
+      <ul class="refs">
+        <li>CBS Philadelphia. “Boat accident in Barnegat Bay…” (2025). 
+          <a href="https://www.cbsnews.com/philadelphia/news/boat-accident-barnegat-bay-little-egg-harbor/">Link</a></li>
+        <li>Fox8 Live. “Man killed by boat propeller…” (2025).
+          <a href="https://www.fox8live.com/2025/06/10/lake-charles-man-killed-by-boat-propeller-calcasieu-river/">Link</a></li>
+        <li>WFLA. “Police say 1 tool could have prevented runaway boat…” (2024/2025).
+          <a href="https://www.wfla.com/news/sarasota-county/police-say-1-tool-could-have-prevented-runaway-boat-in-sarasota-bay/">Link</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="meta">© <span id="yr"></span> Research • PDR</p>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
